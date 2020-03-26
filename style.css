@@ -32,9 +32,9 @@ h1{
   text-align: center;
   border-bottom-style: double;
   border-color: gray;
-  border-radius: 10px;
-  padding: 7.5px;
- background-image: linear-gradient(to bottom right, white, gray);
+/*   border-radius: 10px; */
+/*   padding: 7.5px; */
+/*  background-image: linear-gradient(to bottom right, white, gray); */
  color: white;
 
 }
@@ -80,10 +80,11 @@ div.mapTitle{
   position: relative;
   width: 75%;
   margin-left: 15%;
+  border-top-style: double;
+  border-color: gray;
 
 
 }
-
 
 svg{
 
