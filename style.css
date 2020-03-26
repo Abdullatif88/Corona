@@ -21,7 +21,7 @@ h1{
 
   margin-left: 50px;
   margin-top: -50px;
-  letter-spacing: 5px;
+/*   letter-spacing: 5px; */
 }
 
 .intro{
@@ -37,7 +37,7 @@ h1{
 
 h2{
   font-weight: normal;
-  letter-spacing: 2px;
+/*   letter-spacing: 2px; */
   line-height: 50px;
   text-align: center;
   width: 85%
@@ -125,7 +125,7 @@ svg.destination{
 div.dataSource{
 
   font-size: 20px;
-  margin-left: 75px;
+  margin-left: 2.5%;
   margin-bottom: 25px;
   border-top-style: double;
   border-color: gray;
