@@ -167,7 +167,7 @@ function flowMapDestination(){
             .attr("class", "destination")
 
   var projection = d3.geoNaturalEarth1()
-      .scale(180)
+      .scale(200)
       .translate([width/2.05, height/1.8]);
 
   // Setting the zoom interactivity
