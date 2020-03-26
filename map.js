@@ -113,7 +113,7 @@ function flowMapSource(){
                               .attr("cy", function(d){
                         return projection(d.geometry.coordinates[0][0])[1];
                       })
-                              .attr("r", "4.25px")
+                              .attr("r", "3.25px")
                               
                               
                               // .attr("fill", "red")
@@ -233,7 +233,7 @@ function flowMapDestination(){
                               .attr("cy", function(d){
                         return projection(d.geometry.coordinates[0][1])[1];
                       })
-                              .attr("r", "4.25px")
+                              .attr("r", "3.25px")
                               
 
           // Adding the zoom functionality
