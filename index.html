@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>HTML playground</title>
+
+		<!-- external CSS style sheets go here -->
+    <link rel="stylesheet" href="style.css">
+		<!-- external JavaScript documents go here -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+	<script src="map.js"></script>
+    <script src="world.js"></script>
+    <script src="paths.js"></script>
+    <script src="paths2.js"></script>
+		<!-- <script src="world2_1.js"></script> -->
+
+
+	</head>
+
+	<body>
+
+		<div class= "title">
+			<h1>
+				<p>Geographic Spread of Coronavirus</p>
+			</h1>
+		</div>
+
+			
+
+		<div class="intro">
+			<h2>
+				<p>
+					The interactive maps below illustrates the migaration of Coronavirus <b> "COVID-19" </b> worldwide 
+
+				</p>
+
+
+					<p> The map on the left represents the <b style="color: #ff4d94"> Hubs </b> or the <b>Origin</b> of <b>COVID-19</b> and all the destinations that were affected by the Hub country. The map on the right represents the countries the have received the cases <b style="color: #ff4d94">Destinations</b>. Each country may have one or more international source of <b>COVID-19</b> 
+					</p>
+
+
+					<span>Kindly note that cases from <b>China</b> were excluded, since <b>China</b> represents the main Hub of <b>COVID-19</b> 
+					</span>
+			</h2>
+
+		</div>
+
+		
+
+			<div class= "originText">
+
+				<h2>
+
+					<p> <b>Hubs</b>
+
+						<br> Hover the mouse over one Hub to explore the migration of the <b>COVID-19</b> cases to other countries </br>
+					</p>
+
+					
+
+				</h2>
+						<script>
+
+      						flowMapSource();
+
+
+						</script>
+				
+
+			</div>
+
+			<div class="destinText">
+				
+				<h2>
+
+					<p> <b>Destinations</b> 
+						<br> Hover the mouse over one Destination to explore the sources of the <b>COVID-19</b> cases</br>
+
+					</p>
+
+				</h2>
+						<script>
+							flowMapDestination();
+
+						</script>
+				
+			</div>
+			
+
+		
+
+		<!-- A place to place / invoke your JavaScript code -->
+<!-- 		<script>
+	  // mainMap();
+      flowMapSource();
+      // flowMapDestination();
+      mainMap();
+		</script> -->
+
+		<div class="dataSource">
+			<p> The data were manually collected from <a href="https://www.worldometers.info/coronavirus/" > https://www.worldometers.info/coronavirus/</a> </p>
+			<p> The data are up to <b>March 17, 2019</b></p>
+		</div>
+
+
+	</body>
+
+</html>

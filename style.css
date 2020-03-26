@@ -1,0 +1,134 @@
+ body{
+
+  background-color: white;
+  width: 100%;
+  height: 100%;
+
+} 
+
+div.title{
+  width: 75%;
+  border-bottom-style: double;
+  border-color: white;
+  border-width: 10px;
+  font-size: 30px;
+  margin-left: 15%;
+  text-align: center;
+
+}
+
+h1{
+
+  margin-left: 50px;
+  margin-top: -50px;
+  letter-spacing: 5px;
+}
+
+.intro{
+
+  font-size: 24;
+  margin-left: 15%;
+  width: 75%;
+  text-align: center;
+  border-bottom-style: double;
+  border-color: gray;
+
+}
+
+h2{
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align: center;
+  width: 85%
+  margin-left:15%
+}
+
+span{
+
+  font-size: 16;
+}
+
+/*
+div.mapTitle{
+  display: flex;
+  align-items: center;
+  width: 85.5%;
+  border-style: double;
+  border-color: white;
+  border-width: 8px;
+  font-size: 22px;
+  margin-left: 75px;
+  margin-top: 25px;
+  text-align: center;
+
+}
+*/
+.originText{
+
+  width: 75%;
+  margin-left: 15%;
+
+}
+
+.destinText{
+
+  position: relative;
+  width: 75%;
+  margin-left: 15%;
+
+
+}
+
+
+svg{
+
+  width:100%;
+  height: 600px;
+  /*background-color: #cccccc;*/
+  margin-top: 20px;
+  margin-left: 2.5%;
+/*  border-style: dashed;
+  border-color: #bbbbbb;*/
+
+}
+
+svg.destination{
+  width:100%;
+  height: 600px;
+  /*background-color: #cccccc;*/
+  margin-left: 2.5%;
+}
+
+.line {
+  fill: none;
+  stroke: none; 
+  stroke-width: 1px; 
+  stroke-linecap: round;
+
+}
+
+.source{
+
+  fill: red;
+  stroke: white;
+
+}
+
+.destination{
+
+  fill: #00ffcc;
+  stroke: white;
+
+}
+
+div.dataSource{
+
+  font-size: 20px;
+  margin-left: 75px;
+  margin-bottom: 25px;
+  border-top-style: double;
+  border-color: gray;
+  width: 75%;
+  text-align: center;
+}
