@@ -1,58 +1,24 @@
 "use strict";
 
-// function mainMap(){
-//   var width = 1000,
-//       height = 600;
-//  var svg = d3.select("body")
-//             .append("svg");
-
-//             // .style("width", 1200)
-//             // .style("height", 600);
-
-//   var projection = d3.geoNaturalEarth1()
-//       .scale(210)
-//       .translate([width/2.05, height/1.8]);
-
-//   const zoom = d3.zoom()
-//                       .scaleExtent([1,6])
-//                       .on("zoom", zoomed);
-
-//   const g = svg.append('g');
-//   svg.call(zoom);
-
-//     var countries = svg.append("g")
-//         .selectAll("path")
-//         .data(world.features)
-//         .enter().append("path")
-//             .filter(function(d){ return d.properties.name !== "Antarctica"})
-//             .attr("class","worldMain")
-//             .attr("fill", "#404040")
-//             .attr("d", d3.geoPath()
-//                 .projection(projection)
-//             )
-//             .style("stroke", "#ffffff")
-//             .style("stroke-width","0.5");
-
-// };
-
-
-
-
+var scale = 200,
+    center = [10,10];
 function flowMapSource(){
-  var width = 900,
-      height = 600;
 
+var width = 1000,
+    height = 600;
 
-  var svg = d3.select("body")
+  var svg = d3.select(".svgSource")
             .append("svg")
+            .attr("class", "source")
+            .attr("width", width)
+            .attr("height", height)
 
-
-            // .style("width", 1200)
-            // .style("height", 600);
 
   var projection = d3.geoNaturalEarth1()
-      .scale(200)
-      .translate([width/2.05, height/1.8]);
+      .scale(scale)
+      .center(center)
+      .translate([width/2, height/2]);
+
 
   // const zoom = d3.zoom()
   //                     .scaleExtent([1,6])
@@ -114,8 +80,8 @@ function flowMapSource(){
                         return projection(d.geometry.coordinates[0][0])[1];
                       })
                               .attr("r", "3.25px")
-                              
-                              
+
+
                               // .attr("fill", "red")
 
 
@@ -158,17 +124,21 @@ function flowMapSource(){
 ///////////// Another Map for the Destination Interactivity /////////////////////////////
 
 function flowMapDestination(){
-  var width = 900,
+  var width = 1000,
       height = 600;
 
 
-  var svg = d3.select("body")
+  var svg = d3.select(".svgDest")
             .append("svg")
             .attr("class", "destination")
+            .attr("width", width)
+            .attr("height", height)
+
 
   var projection = d3.geoNaturalEarth1()
-      .scale(200)
-      .translate([width/2.05, height/1.8]);
+      .scale(scale)
+      .translate([width/2., height/2])
+      .center(center);
 
   // Setting the zoom interactivity
   // const zoom = d3.zoom()
@@ -234,12 +204,12 @@ function flowMapDestination(){
                         return projection(d.geometry.coordinates[0][1])[1];
                       })
                               .attr("r", "3.25px")
-                              
+
 
           // Adding the zoom functionality
         //   function zoomed(){
         //       svg
-        // .selectAll(".world,.line, .destination, .text_to") 
+        // .selectAll(".world,.line, .destination, .text_to")
         // .attr('transform', d3.event.transform);
 
         //   }
@@ -265,7 +235,7 @@ function flowMapDestination(){
                 })
 
                 .on('mouseout', function (d) {
-                        destination.style('fill', "#00ffcc").style("stroke","white")
+                        destination.style('fill', "#056bfa").style("stroke","white")
                         lines
                           .style('stroke', 'none')
                           .style('stroke-width', '1')

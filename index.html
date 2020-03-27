@@ -24,6 +24,9 @@
 	</head>
 
 	<body>
+		<!-- <div class="bground">
+
+		</div> -->
 
 		<div class= "title">
 			<h1>
@@ -33,32 +36,32 @@
 			</h1>
 		</div>
 
-			
+
 
 		<div class="intro">
 			<h2>
 <!-- 				<p>
-					The interactive maps below illustrates the migaration of Coronavirus <b> "COVID-19" </b> worldwide 
+					The interactive maps below illustrates the migaration of Coronavirus <b> "COVID-19" </b> worldwide
 
 				</p> -->
-				
+
 				<p>
-					باستخدام الخرائط التفاعلية أدناه، يمكن التعرف على الدول المصدرة للحالات المرضية والدول 
+					باستخدام الخرائط التفاعلية أدناه، يمكن التعرف على الدول المصدرة للحالات المرضية والدول
 					التي استقبلت الحالات المرضية
 				</p>
 
 
 
 
-<!-- 					<span>Kindly note that cases from <b>China</b> were excluded, since <b>China</b> represents the main Hub of <b>COVID-19</b> 
+<!-- 					<span>Kindly note that cases from <b>China</b> were excluded, since <b>China</b> represents the main Hub of <b>COVID-19</b>
 					</span> -->
-					<span>يرجى العلم بأن الحالات التي كان مصدرها الصين غير مشمولة في الخريطة كون الصين هي المصدر الأساسي للفايروس في العالم 
+					<span>يرجى العلم بأن الحالات التي كان مصدرها الصين غير مشمولة في الخريطة كون الصين هي المصدر الأساسي للفايروس في العالم
 					</span>
 			</h2>
 
 		</div>
 
-		
+
 
 			<div class= "originText">
 
@@ -66,45 +69,47 @@
 
 					<p> <b>الدول المصدرة</b>
 
-						<br> النقاط في الخريطة أدناه تمثل الدول المصدرة للفايروس. 
+						<br> النقاط في الخريطة أدناه تمثل الدول المصدرة للفايروس.
 						اضغط على أي نقطة للتعرف على الدول التي استقبلت الحالات المرضية من كل مصدر. لتجربة أفضل عند عرض الموقع باستخدام الهاتف، يرجى تكبير الخريطة ثم اختيار أي نقطة.
 						مثلا، إيطاليا
 		</br>
 					</p>
 
-					
-
 				</h2>
-						<script>
-
+						<!-- <script>
       						flowMapSource();
+						</script> -->
+			</div>
 
-
-						</script>
-				
-
+			<div class="svgSource">
+				<script>
+							flowMapSource();
+				</script>
 			</div>
 
 			<div class="destinText">
-				
+
 				<h2>
 
-					<p> <b>الدول المستقبلة</b> 
+					<p> <b>الدول المستقبلة</b>
 						<br> النقاط في الخريطة أدناه تمثل الدول التي استقبلت الحالات المرضية.
 						اضغط على أي نقطة للتعرف على المصادر الخارجية لانتقال المرض إلى هذه الدولة</br>
 
 					</p>
 
 				</h2>
-						<script>
-							flowMapDestination();
 
-						</script>
-				
 			</div>
-			
 
-		
+			<div class="svgDest">
+
+				<script>
+							flowMapDestination();
+				</script>
+
+			</div>
+
+
 
 		<!-- A place to place / invoke your JavaScript code -->
 <!-- 		<script>
@@ -115,7 +120,8 @@
 		</script> -->
 
 		<div class="dataSource">
-			<p> تم جمع البيانات بشكل يدوي من <a href="https://www.worldometers.info/coronavirus/" > https://www.worldometers.info/coronavirus/</a> </p>
+			<p> تم جمع البيانات بشكل يدوي من  </p>
+			<span> <a href="https://www.worldometers.info/coronavirus/" > https://www.worldometers.info/coronavirus/</a> </span>
 			<p> يرجى العلم بأن البيانات المعروضة في هذا الموقع لا تمثل كل الحالات في العالم.
 			الحالات المعروضة في هذا الموقع تم جمعها من الأخبار العالمية بحسب توفرها في الموقع المذكور أعلاه</p>
 			<p> آخر تحديث للبيانات كان في 17 مارس 2020</b></p>
