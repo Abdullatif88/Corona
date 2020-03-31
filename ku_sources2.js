@@ -1,0 +1,19 @@
+let point_src2 ={
+"type": "FeatureCollection",
+"name": "ku_sources2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "case_from": "Azerbaijan", "case_to": "Kuwait", "name_ar_from": "أذربيجان", "name_ar_to": "الكويت", "cases": 14, "kuwaiti": 2, "non_kuwaiti": 12, "male": 6, "female": 6, "rank":8 }, "geometry": { "type": "Point", "coordinates": [ 47.542, 40.289 ] } },
+{ "type": "Feature", "properties": { "case_from": "Spain", "case_to": "Kuwait", "name_ar_from": "إسبانيا", "name_ar_to": "الكويت", "cases": 1, "kuwaiti": 0, "non_kuwaiti": 1, "male": 0, "female": 1, "rank":4 }, "geometry": { "type": "Point", "coordinates": [ -3.652637016952276, 40.227233701418818 ] } },
+{ "type": "Feature", "properties": { "case_from": "Qatar", "case_to": "Kuwait", "name_ar_from": "قطر", "name_ar_to": "الكويت", "cases": 1, "kuwaiti": 1, "non_kuwaiti": 0, "male": 1, "female": 0, "rank":4  }, "geometry": { "type": "Point", "coordinates": [ 51.186831293557319, 25.31307459410549 ] } },
+{ "type": "Feature", "properties": { "case_from": "Saudi Arabia", "case_to": "Kuwait", "name_ar_from": "المملكة العربية السعودية", "name_ar_to": "الكويت", "cases": 8, "kuwaiti": 7, "non_kuwaiti": 1, "male": 3, "female": 0, "rank":6 }, "geometry": { "type": "Point", "coordinates": [ 44.536863677354148, 24.122327069463921 ] } },
+{ "type": "Feature", "properties": { "case_from": "Jordan", "case_to": "Kuwait", "name_ar_from": "الأردن", "name_ar_to": "الكويت", "cases": 1, "kuwaiti": 0, "non_kuwaiti": 1, "male": 1, "female": 0, "rank":4 }, "geometry": { "type": "Point", "coordinates": [ 36.770921802362317, 31.245574139571087 ] } },
+{ "type": "Feature", "properties": { "case_from": "Switzerland", "case_to": "Kuwait", "name_ar_from": "سويسرا", "name_ar_to": "الكويت", "cases": 5, "kuwaiti": 3, "non_kuwaiti": 2, "male": 5, "female": 0, "rank":4 }, "geometry": { "type": "Point", "coordinates": [ 8.215353657454004, 46.798956869778827 ] } },
+{ "type": "Feature", "properties": { "case_from": "United Arab Emirates", "case_to": "Kuwait", "name_ar_from": "الإمارات العربية المتحدة", "name_ar_to": "الكويت", "cases": 2, "kuwaiti": 1, "non_kuwaiti": 0, "male": 1, "female": 0, "rank":4 }, "geometry": { "type": "Point", "coordinates": [ 54.30079560308414, 23.905783055559723 ] } },
+{ "type": "Feature", "properties": { "case_from": "Egypt", "case_to": "Kuwait", "name_ar_from": "مصر", "name_ar_to": "الكويت", "cases": 9, "kuwaiti": 8, "non_kuwaiti": 1, "male": 3, "female": 0, "rank":6 }, "geometry": { "type": "Point", "coordinates": [ 29.861208709032564, 26.492919626470378 ] } },
+{ "type": "Feature", "properties": { "case_from": "Iran", "case_to": "Kuwait", "name_ar_from": "إيران", "name_ar_to": "الكويت", "cases": 86, "kuwaiti": 82, "non_kuwaiti": 0, "male": 6, "female": 6, "rank":12 }, "geometry": { "type": "Point", "coordinates": [ 54.276946729212803, 32.570678177913898 ] } },
+{ "type": "Feature", "properties": { "case_from": "United States of America", "case_to": "Kuwait", "name_ar_from": "الولايات المتحدة", "name_ar_to": "الكويت", "cases": 4, "kuwaiti": 4, "non_kuwaiti": 0, "male": 1, "female": 2, "rank":4 }, "geometry": { "type": "Point", "coordinates": [ -100.366059888440475, 38.901182987787109 ] } },
+{ "type": "Feature", "properties": { "case_from": "United Kingdom", "case_to": "Kuwait", "name_ar_from": "المملكة المتحدة", "name_ar_to": "الكويت", "cases": 76, "kuwaiti": 46, "non_kuwaiti": 12, "male": 5, "female": 5, "rank":12 }, "geometry": { "type": "Point", "coordinates": [ -1.665599417566927, 52.932467960649959 ] } },
+{ "type": "Feature", "properties": { "case_from": "France", "case_to": "Kuwait", "name_ar_from": "فرنسا", "name_ar_to": "الكويت", "cases": 5, "kuwaiti": 4, "non_kuwaiti": 0, "male": 2, "female": 2, "rank":4 }, "geometry": { "type": "Point", "coordinates": [ 2.530029912553832, 46.914147200230829 ] } }
+]
+}

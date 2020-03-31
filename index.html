@@ -13,128 +13,157 @@
     <script src="https://d3js.org/d3.v5.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-	<script src="map.js"></script>
+
+		<script src="map.js"></script>
+		<!-- <script src="map-ku.js"></script> -->
     <script src="world.js"></script>
     <script src="paths.js"></script>
-    <script src="paths2.js"></script>
+		<script src="kuwait_path.js"></script>
+		<script src="ku_sources.js"></script>
+		<script src="kuwait_path2.js"></script>
+		<script src="ku_sources2.js"></script>
+    <!-- <script src="paths2.js"></script> -->
+    <script src="path3.js"></script>
+		<script src="chart.js"></script>
 		<!-- <script src="world2_1.js"></script> -->
 
 
 	</head>
 
 	<body>
-		<!-- <div class="bground">
-
-		</div> -->
 
 		<div class= "title">
 			<h1>
-<!-- 				<p>Geographic Spread of Coronavirus</p> -->
+
 				<p>الانتشار الجغرافي لفايروس كورونا المستجد</p>
 				<p> <b> COVID-19 </b> </p>
 			</h1>
 		</div>
 
-
-
 		<div class="intro">
 			<h2>
-<!-- 				<p>
-					The interactive maps below illustrates the migaration of Coronavirus <b> "COVID-19" </b> worldwide
-
-				</p> -->
 
 				<p>
 					باستخدام الخرائط التفاعلية أدناه، يمكن التعرف على الدول المصدرة للحالات المرضية والدول
 					التي استقبلت الحالات المرضية
 				</p>
-
-
-
-
-<!-- 					<span>Kindly note that cases from <b>China</b> were excluded, since <b>China</b> represents the main Hub of <b>COVID-19</b>
-					</span> -->
-					<span>يرجى العلم بأن الحالات التي كان مصدرها الصين غير مشمولة في الخريطة كون الصين هي المصدر الأساسي للفايروس في العالم
-					</span>
+				<span>
+					يرجى العلم بأن الحالات التي كان مصدرها الصين غير مشمولة في الخريطة كون الصين هي المصدر الأساسي للفايروس في العالم
+				</span>
 			</h2>
-
 		</div>
 
-
-
-			<div class= "originText">
-
-				<h2>
-
-					<p> <b>الدول المصدرة</b>
-
-						<br> النقاط في الخريطة أدناه تمثل الدول المصدرة للفايروس.
+		<div class= "originText">
+			<h2>
+				<p> <b>الدول المصدرة</b>
+					<br> النقاط في الخريطة أدناه تمثل الدول المصدرة للفايروس.
 						اضغط على أي نقطة للتعرف على الدول التي استقبلت الحالات المرضية من كل مصدر. لتجربة أفضل عند عرض الموقع باستخدام الهاتف، يرجى تكبير الخريطة ثم اختيار أي نقطة.
 						مثلا، إيطاليا
-		</br>
-					</p>
-
-				</h2>
-						<!-- <script>
-      						flowMapSource();
-						</script> -->
-			</div>
-
-			<div class="svgSource">
-				<script>
-							flowMapSource();
-				</script>
-			</div>
-
-			<div class="destinText">
-
-				<h2>
-
-					<p> <b>الدول المستقبلة</b>
-						<br> النقاط في الخريطة أدناه تمثل الدول التي استقبلت الحالات المرضية.
-						اضغط على أي نقطة للتعرف على المصادر الخارجية لانتقال المرض إلى هذه الدولة</br>
-
-					</p>
-
-				</h2>
-
-			</div>
-
-			<div class="svgDest">
-
-				<script>
-							flowMapDestination();
-				</script>
-
-			</div>
-
-
-
-		<!-- A place to place / invoke your JavaScript code -->
-<!-- 		<script>
-	  // mainMap();
-      flowMapSource();
-      // flowMapDestination();
-      mainMap();
-		</script> -->
-
-		<div class="dataSource">
-			<p> تم جمع البيانات بشكل يدوي من  </p>
-			<span> <a href="https://www.worldometers.info/coronavirus/" > https://www.worldometers.info/coronavirus/</a> </span>
-			<p> يرجى العلم بأن البيانات المعروضة في هذا الموقع لا تمثل كل الحالات في العالم.
-			الحالات المعروضة في هذا الموقع تم جمعها من الأخبار العالمية بحسب توفرها في الموقع المذكور أعلاه</p>
-			<p> آخر تحديث للبيانات كان في 17 مارس 2020</b></p>
-			<p> إعداد: عبداللطيف فهد الياقوت </p>
-			<p> @geo_alyaqout </p>
-			<p> <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=7215433&style=0003&nbdigits=5&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
-</a>
-			</p>
+					</br>
+				</p>
+			</h2>
 		</div>
 
+		<div class="svgSource">
+			<script>
+						flowMapSource();
+			</script>
+		</div>
 
+		<div class="destinText">
+			<h2>
+				<p> <b>الدول المستقبلة</b>
+					<br> النقاط في الخريطة أدناه تمثل الدول التي استقبلت الحالات المرضية.
+					اضغط على أي نقطة للتعرف على المصادر الخارجية لانتقال المرض إلى هذه الدولة
+					</br>
+				</p>
+			</h2>
+		</div>
+
+		<div class="svgDest">
+			<script>
+						flowMapDestination();
+			</script>
+		</div>
+
+		<div class="dataSource">
+				<p> تم جمع البيانات بشكل يدوي من  </p>
+				<span> <a href="https://www.worldometers.info/coronavirus/" > https://www.worldometers.info/coronavirus/</a> </span>
+				<p> يرجى العلم بأن البيانات المعروضة في هذا الموقع لا تمثل كل الحالات في العالم.
+				الحالات المعروضة في هذا الموقع تم جمعها من الأخبار العالمية بحسب توفرها في الموقع المذكور أعلاه
+				</p>
+				<p> آخر تحديث للبيانات كان في 30 مارس 2020</b></p>
+		</div>
+
+		<div class="kuText">
+			<h2>
+				<p>
+					<b>حالات كورونا في الكويت</b>
+					<br> الدوائر البيانية في الخريطة أدناه تمثل مصادر الإصابة
+					بالفايروس. عند اختيار أي مصدر، يظهر اسم الدولة وعدد الحالات المرتبطة بتلك الدولة
+					</br>
+				</p>
+			</h2>
+		</div>
+
+		<div class="svgKu">
+			<script>
+				kuMap();
+			</script>
+		</div>
+
+		<div class="chartText">
+			<h2>
+				<p>
+					<b>توزيع الحالات حسب المصدر و النوع</b>
+						<br> الشكل أدناه يوضح توزيع الحالات حسب المصدر بالعدد والتقسيم حسم النوع. يرجى العلم بأن الأعداد تم حصرها
+								بناء على الأخبار المنشورة في حسابات وزارة الصحة الكويتية على مواقع التواصل الإجتماعي. آخر تحديث للبيانات: 30 مارس 2020
+						</br>
+				</p>
+			</h2>
+		</div>
+
+		<div id="sankey_basic">
+			<script>
+					chart();
+			</script>
+		</div>
+
+		<div class="mapBoxText">
+			<h2>
+
+				<p>
+					<b>حالات التقصي الوبائي في الكويت</b>
+						<br> الخريطة أدناه توضح المناطق التي تم اكتشاف وجود حالات إيجابية لفايروس كورونا. موقع النقاط عام ولا يعني المكان
+									التفصيلي للحالات المكتشفة. البيانات تم جمعها من حسابات وزارة الصحة الكويتية في مواقع التواصل الاجتماعي.
+									آخر تحديث للبيانات: 30 مارس 2020
+						</br>
+				</p>
+			</h2>
+		</div>
+
+		<div class="mapBox">
+				<iframe src="https://api.mapbox.com/styles/v1/alyaqout/ck8cjho9n32091ipr9mtndex9.html?fresh=true&title=view&access_token=pk.eyJ1IjoiYWx5YXFvdXQiLCJhIjoiY2s4Y2piYnVrMGhlZDNsbjI5enowM3A1eSJ9.QfJge8eeFl17pxdmTYSOaA">
+				</iframe>
+		</div>
+
+		<div class="dataSourceFinal">
+			<p>بيانات كورونا في الكويت تم جمعها من حسابات وزارة الصحة الكويتية في مواقع التواصل الاجتماعي. البيانات المعروضة
+			 لا تمثل كافة الحالات المرصودة، حيث أن بعض الحالات لم يذكر مصدر الاصابة فيها أو أي معلومات إضافية أخرى</p>
+			<p> آخر تحديث للبيانات كان في 30 مارس 2020</p>
+			<p> إعداد: عبداللطيف فهد الياقوت </p>
+			<p> @geo_alyaqout </p>
+			<p>قسم الجغرافيا - كلية العلوم الاجتماعية</p>
+			<p>جامعة الكويت</p>
+			<p> <!-- hitwebcounter Code START -->
+				<a href="https://www.hitwebcounter.com" target="_blank">
+				<img src="https://hitwebcounter.com/counter/counter.php?page=7218473&style=0030&nbdigits=5&type=ip&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
+				</a>
+			</p>
+		</div>
 	</body>
+
 
 </html>
